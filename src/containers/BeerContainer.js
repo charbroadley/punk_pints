@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
 import BeerSelector from "../components/BeerSelector";
 import BeerDetails from "../components/BeerDetails";
+import InteractiveContainer from "./InteractiveContainer";
 
 const BeerContainer = () => {
     
     // TRACKING USE STATES:
     const [beers, setBeers] = useState([])
     const [beerSelected, setBeerSelected] = useState(null)
+    const [wantList, setWantList] = useState([])
 
     // MANAGING REACT RERENDERING:
     useEffect (() => {
@@ -27,10 +29,24 @@ const BeerContainer = () => {
         console.log(`selected beer is ${beerSelected}`)
     }
 
+    // STRIKE OUT BEERS DRANK FROM LIST:
+    // const strikeOut = function ()
+
+    // ADD BEER TO WANT LIST:
+    const addToWantList = () => {
+        let newWants = []
+        // TO PREVENT DUPLICATES - NOT WORKING (EMPTIES LIST) COME BACK LATER
+        // if(!wantList.includes(beerSelected))
+        newWants = [...wantList, beerSelected]
+        setWantList(newWants)
+    }
+
     return(
         <div className="beer-container">
-            <h2>Terrible at picking your next pint? Always holding up the next round?</h2>
+            
             <BeerSelector beers={beers} onBeerSelect={onBeerSelect}/>
+
+            <InteractiveContainer wantList={wantList} addToWantList={addToWantList}/>
 
             {beerSelected && <BeerDetails beer={beerSelected}/>}
         </div>

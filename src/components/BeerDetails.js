@@ -2,10 +2,8 @@ const BeerDetails = ({beer}) => {
 
     return (
         <>
-            <h3>Your next beer!!</h3>
-            <br></br>
+            <h3>Your next beer is {beer.name}</h3>
             <p>
-                <b>{beer.name}</b>
                 <br></br>
                 Abv: {beer.abv}
                 <br></br>

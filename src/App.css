@@ -9,3 +9,7 @@
 li {
   list-style-type: none;
 }
+
+.interactive {
+  border: 5px solid black;
+}

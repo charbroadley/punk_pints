@@ -21,9 +21,8 @@ const BeerSelector = ({beers, onBeerSelect}) => {
 
     return (
         <div className="beer-selector">
-            <h2>RANDOM PINT PICKER</h2>
-            <h2>Terrible at chosing your next pint? Always holding up the bar?</h2>
-            <h4>Pick a number and we pick your next beer</h4>
+            <h2>Terrible at chosing your next pint?</h2>
+            <h4>Pick a number. We pick your next beer.</h4>
             
             <select defaultValue="" onChange={handleChange}>
                 {beerItems}

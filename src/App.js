@@ -3,8 +3,8 @@ import BeerContainer from './containers/BeerContainer';
 
 function App() {
   return (
-    <div className="App">
-      <h1>PUNK PINTS</h1>
+    <div className="app">
+      <img className="logo" src="https://see.fontimg.com/api/renderfont4/YX3y/eyJyIjoiZnMiLCJoIjoxODYsInciOjIwMDAsImZzIjo5MywiZmdjIjoiIzRCOUFDQiIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/UHVuayBQaW50cw/punk-kid.png" alt="Punk Pints" width="400"></img>
       <BeerContainer/>
     </div>
   );

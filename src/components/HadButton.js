@@ -1,7 +1,7 @@
 const HadButton = ({addToDrunkBeers}) => {
 
     return(
-        <button onClick={addToDrunkBeers}>Drank</button>
+        <button className="button" onClick={addToDrunkBeers}>Drank</button>
     )
 }
 

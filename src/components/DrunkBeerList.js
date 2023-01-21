@@ -9,7 +9,8 @@ const DrunkBeerList = ({drunkBeers}) => {
 
     return (
         <section className="drunk-list">
-            <h3>YOU ALREADY LOVE - {showBeersAlreadyDrunk.length ? "These are all best!": "Add your favourites so you don't forget!"}</h3>
+            <h3>ALREADY HAD & LOVED<br>
+            </br>{showBeersAlreadyDrunk.length ? "These are all best!": "Add your favourites so you don't forget!"}</h3>
 
             {showBeersAlreadyDrunk}
         </section>

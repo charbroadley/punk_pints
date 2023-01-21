@@ -8,9 +8,10 @@ const InteractiveContainer = ({addToDrunkBeers, drunkBeers, addToWantList, wantL
         <section className="interactive">
             <ButtonContainer addToWantList={addToWantList}
             addToDrunkBeers = {addToDrunkBeers}/>
-
-            <WantList wantList={wantList}/>
-            <DrunkBeerList drunkBeers={drunkBeers}/>
+                <div className="lists">
+                    <WantList wantList={wantList}/>
+                    <DrunkBeerList drunkBeers={drunkBeers}/>
+                </div>
         </section>
     )
 }

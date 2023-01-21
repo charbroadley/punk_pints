@@ -7,7 +7,7 @@ const BeerContainer = () => {
     
     // TRACKING USE STATES:
     const [beers, setBeers] = useState([])
-    const [beerSelected, setBeerSelected] = useState(null)
+    const [beerSelected, setBeerSelected] = useState("")
     const [wantList, setWantList] = useState([])
     const [drunkBeers, setDrunkBeers] = useState ([])
 
@@ -29,6 +29,15 @@ const BeerContainer = () => {
         setBeerSelected(chosenBeerByNumber)
         console.log(`selected beer is ${beerSelected}`)
     }
+
+    // FUNCTION TO HANDLE NUMBER TYPED INTO BOX:
+    // const onBeerSelect = function (inputValue) {
+    //     const chosenBeerByNumber = beers.find((beer) => beer.id === Number(inputValue))
+    //     setBeerSelected(chosenBeerByNumber)
+    //     console.log(inputValue)
+    //     console.log(`chosen beer by number is ${chosenBeerByNumber}`)
+    //     console.log(`selected beer is ${beerSelected}`)
+    // }
 
     // ADD BEER TO WANT LIST:
     const addToWantList = () => {

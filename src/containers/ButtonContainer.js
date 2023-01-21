@@ -4,10 +4,10 @@ import WantButton from "../components/WantButton";
 const ButtonContainer = ({addToWantList, addToDrunkBeers}) => {
 
     return (
-        <section className="buttons">
-            <HadButton addToDrunkBeers={addToDrunkBeers}/>
+        <section className="buttons-container">
             <WantButton
             addToWantList={addToWantList}/>
+            <HadButton addToDrunkBeers={addToDrunkBeers}/>
         </section>
     )
 }

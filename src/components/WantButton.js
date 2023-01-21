@@ -1,7 +1,7 @@
 const WantButton = ({addToWantList}) => {
 
     return (
-        <button onClick={addToWantList}>Want</button>
+        <button className="button" onClick={addToWantList}>Want</button>
     )
 }
 

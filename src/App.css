@@ -1,19 +1,88 @@
+.app {
+  font-family: 'Special Elite', sans-serif;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
 .beer-container {
-  border: 5px solid black;
+  /* display: flex;
+  border: 2px solid rgb(184, 47, 47); */
+  grid-template-areas:
+        'beer-selector interactive'
+        'details details';
 }
 
 .beer-selector {
-  border: 5px solid black;
+  /* border: 2px solid #5ca0e9; */
+  grid-area: beer-selector;
+  text-align: center;
+  margin: 10px;
+}
+
+
+.interactive {
+  border: 1px dotted #5ca0e9;
+  grid-area: interactive;
+}
+
+.details {
+  grid-area: details;
 }
 
 li {
   list-style-type: none;
 }
 
-.interactive {
-  border: 5px solid black;
+.button {
+  display:inline-block;
+  padding:0.5em 3em;
+  border:0.16em solid #5ca0e9;
+  margin:0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-family:'Roboto',sans-serif;
+  font-weight:400;
+  color: #5ca0e9;
+  text-align:center;
+  transition: all 0.15s;
+  background-color: white;
 }
 
-.drank {
-  text-decoration: line-through;
+.button:hover{
+  color: white;
+  border-color: white ;
+  background-color: #5ca0e9;
 }
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  border: 5px solid white;
+}
+
+.lists {
+  display: grid;
+  grid-template-areas: 'want-list drunk-list';
+  grid-template-columns: 50% 50%;
+}
+
+.want-list {
+  grid-area: want-list;
+  margin: 10px;
+  text-align: center;
+}
+
+.drunk-list {
+  grid-area: drunk-list;
+  margin: 10px;
+  text-align: center;
+}
+
+
+

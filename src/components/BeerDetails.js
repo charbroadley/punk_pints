@@ -1,7 +1,7 @@
 const BeerDetails = ({beer}) => {
 
     return (
-        <>
+        <section className="details">
             <h3>Your next beer is {beer.name}</h3>
             <p>
                 <br></br>
@@ -15,7 +15,7 @@ const BeerDetails = ({beer}) => {
             </p>
             <img src={beer["image_url"]} alt={beer.name} height="300"></img>
             
-        </>
+        </section>
     )
 }
 

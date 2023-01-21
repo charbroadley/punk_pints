@@ -2,12 +2,21 @@ const BeerDetails = ({beer}) => {
 
     return (
         <>
-            <h3>Beer Details</h3>
+            <h3>Your next beer!!</h3>
             <br></br>
-            <p>{beer.name}
-            {beer.tagline}
+            <p>
+                <b>{beer.name}</b>
+                <br></br>
+                Abv: {beer.abv}
+                <br></br>
+                <br></br>
+                {beer.tagline}
+                <br></br>
+                <br></br>
             {beer.description}
             </p>
+            <img src={beer["image_url"]} alt={beer.name} height="300"></img>
+            
         </>
     )
 }

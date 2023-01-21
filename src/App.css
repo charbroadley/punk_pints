@@ -32,10 +32,36 @@
 
 .details {
   grid-area: details;
+  display: grid;
+  grid-template-areas:
+    'text-side image-side';
+  grid-template-columns: 50% 50%;
+}
+
+.text-side {
+  grid-area: text-side;
+  margin: 10px;
+}
+
+.description {
+  text-align: justify;
+}
+
+.image-side {
+grid-area: image-side;
+display: flex;
+justify-content: center;
+margin: 10px;
 }
 
 li {
   list-style-type: none;
+  padding-left: 1rem;
+  text-indent: -0.7rem;
+}
+
+li::before {
+  content: "🍺 ";
 }
 
 .button {
@@ -84,5 +110,11 @@ li {
   text-align: center;
 }
 
+.your-beer {
+  font-family: 'Sedgwick Ave Display', sans-serif;
+  color: #5ca0e9;
+  font-weight: bold;
+  font-size:xx-large;
+}
 
 

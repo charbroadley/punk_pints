@@ -23,6 +23,15 @@ const BeerContainer = () => {
             .then(beers => setBeers(beers))
     }
 
+    // MAP DATA TO GET AN ARRAY OF BEERS:
+    const beerItems = beers.map ((beer) => {
+        return (
+            <option value={beer.name} key={beer.id}>
+                {beer.id}
+            </option>
+        )
+    })
+
     // FUNCTION TO HANDLE NUMBER SELECT FROM DROP DOWN LIST:
     const onBeerSelect = function (beerValue) {
         const chosenBeerByNumber = beers.find((beer) => beer.name === beerValue)
@@ -35,8 +44,8 @@ const BeerContainer = () => {
     //     const chosenBeerByNumber = beers.find((beer) => beer.id === Number(inputValue))
     //     setBeerSelected(chosenBeerByNumber)
     //     console.log(inputValue)
-    //     console.log(`chosen beer by number is ${chosenBeerByNumber}`)
-    //     console.log(`selected beer is ${beerSelected}`)
+    //     console.log(`chosen beer by number is ${chosenBeerByNumber}`) //undefined
+    //     console.log(`selected beer is ${beerSelected}`) //undefined
     // }
 
     // ADD BEER TO WANT LIST:
@@ -59,7 +68,7 @@ const BeerContainer = () => {
         <div className="beer-container">
             
             <BeerSelector
-                beers={beers} onBeerSelect={onBeerSelect}
+                beerItems={beerItems} onBeerSelect={onBeerSelect}
             />
 
             <InteractiveContainer 
@@ -70,6 +79,7 @@ const BeerContainer = () => {
             />
 
             {beerSelected && <BeerDetails beer={beerSelected}/>}
+
         </div>
     )
 }

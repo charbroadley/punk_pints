@@ -9,10 +9,11 @@ const WantList = ({wantList}) => {
 
     return (
         <section className="want-list">
-            <h3>YOUR NEXT BEERS<br></br>
+            <h3>FUTURE PINTS!<br></br>
             {showWantedBeers.length ? "Great choice!": "Click to add your future favourites!"}</h3>
 
             {showWantedBeers}
+            
         </section>
     )
 }

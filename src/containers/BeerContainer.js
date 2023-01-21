@@ -9,6 +9,7 @@ const BeerContainer = () => {
     const [beers, setBeers] = useState([])
     const [beerSelected, setBeerSelected] = useState(null)
     const [wantList, setWantList] = useState([])
+    const [drunkBeers, setDrunkBeers] = useState ([])
 
     // MANAGING REACT RERENDERING:
     useEffect (() => {
@@ -29,9 +30,6 @@ const BeerContainer = () => {
         console.log(`selected beer is ${beerSelected}`)
     }
 
-    // STRIKE OUT BEERS DRANK FROM LIST:
-    // const strikeOut = function ()
-
     // ADD BEER TO WANT LIST:
     const addToWantList = () => {
         let newWants = []
@@ -40,13 +38,27 @@ const BeerContainer = () => {
         newWants = [...wantList, beerSelected]
         setWantList(newWants)
     }
+    
+    // ADD BEER TO DRUNK LIST:
+    const addToDrunkBeers = () => {
+        let newDrunkBeers = []
+        newDrunkBeers = [...drunkBeers, beerSelected]
+        setDrunkBeers(newDrunkBeers)
+    }
 
     return(
         <div className="beer-container">
             
-            <BeerSelector beers={beers} onBeerSelect={onBeerSelect}/>
+            <BeerSelector
+                beers={beers} onBeerSelect={onBeerSelect}
+            />
 
-            <InteractiveContainer wantList={wantList} addToWantList={addToWantList}/>
+            <InteractiveContainer 
+            wantList={wantList} 
+            addToWantList={addToWantList}
+            drunkBeers={drunkBeers}
+            addToDrunkBeers={addToDrunkBeers}
+            />
 
             {beerSelected && <BeerDetails beer={beerSelected}/>}
         </div>

@@ -1,7 +1,7 @@
-const HadButton = ({strikeOut}) => {
+const HadButton = ({addToDrunkBeers}) => {
 
     return(
-        <button onClick={strikeOut}>Drank</button>
+        <button onClick={addToDrunkBeers}>Drank</button>
     )
 }
 

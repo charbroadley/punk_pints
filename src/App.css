@@ -13,3 +13,7 @@ li {
 .interactive {
   border: 5px solid black;
 }
+
+.drank {
+  text-decoration: line-through;
+}

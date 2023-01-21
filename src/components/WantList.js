@@ -8,8 +8,9 @@ const WantList = ({wantList}) => {
     ))
 
     return (
-        <section className="wantList">
-            NEXT BEERS:
+        <section className="want-list">
+            <h3>YOUR NEXT BEERS - {showWantedBeers.length ? "Great choice!": "Click to add your future favourites!"}</h3>
+
             {showWantedBeers}
         </section>
     )

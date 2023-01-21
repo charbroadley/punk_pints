@@ -5,8 +5,12 @@ const Beer = ({beer, onNumberClicked}) => {
         onNumberClicked(beer)
     }
 
+    // const alreadyHad = hasBeenDrunk(beer)
+
     return (
-        <li onClick={handleClick}>{beer.id}</li>
+        <li onClick={handleClick}>
+            {beer.id}
+        </li>
     )
 }
 

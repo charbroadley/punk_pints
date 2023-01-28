@@ -1,21 +1,33 @@
+import { useState } from "react"
 import Beer from "./Beer"
 
 const BeerSelector = ({beerItems, onBeerSelect}) => {
 
-    // HANDLE SELECT CHANGE:
-    const handleChange = function (evt) {
-        const chosenBeer = evt.target.value
-        console.log(chosenBeer)
-        onBeerSelect(chosenBeer)
+    const [inputData, setInputData] = useState("")
+
+    const handleTextChange = function(evt) {
+        setInputData(evt.target.value)
     }
 
-    // SELECT A BEER USING A NUMBER INPUT:
-    // const selectABeer = function (evt) {
-    //     evt.preventDefault()
+    // HANDLE SELECT CHANGE:
+    // const handleChange = function (evt) {
     //     const chosenBeer = evt.target.value
-    //     console.log(`SELECT A BEER ${evt.target.value}`) // undefined
+    //     console.log(chosenBeer)
     //     onBeerSelect(chosenBeer)
     // }
+
+    // SELECT A BEER USING A NUMBER INPUT:
+    const selectABeer = function (evt) {
+        evt.preventDefault()
+        const chosenBeer = inputData.trim()
+            if (!chosenBeer) {
+                return
+            }
+        onBeerSelect(chosenBeer)
+        console.log(chosenBeer)
+        setInputData("")
+
+    }
 
     return (
         <div className="beer-selector">
@@ -23,15 +35,15 @@ const BeerSelector = ({beerItems, onBeerSelect}) => {
                 <br></br>
             Pick a number. We pick your next beer.</h2>
             
-            <select defaultValue="" onChange={handleChange}>
+            {/* <select defaultValue="" onChange={handleChange}>
                 {beerItems}
-            </select>
+            </select> */}
 
-            {/* <form onSubmit={selectABeer}>
-                <label onChange={handleNumberInput} htmlFor="beer">Pick a number from 1 - 80:</label>
-                <input type="number" id="beer" name="beer" min="1" max="80" value={inputData}></input>
+            <form onSubmit={selectABeer}>
+                <label htmlFor="beer">Type a number from 1 - 80:</label>
+                <input type="text" id="beer" name="beer" value={inputData} onChange={handleTextChange}></input>
                 <input type="submit" value="Find a beer"></input>
-            </form> */}
+            </form>
         </div>
     )
 }

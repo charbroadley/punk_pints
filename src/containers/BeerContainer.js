@@ -33,8 +33,9 @@ const BeerContainer = () => {
     })
 
     // FUNCTION TO HANDLE NUMBER SELECT FROM DROP DOWN LIST:
+    // (double equals because we're comparing a number to a string)
     const onBeerSelect = function (beerValue) {
-        const chosenBeerByNumber = beers.find((beer) => beer.name === beerValue)
+        const chosenBeerByNumber = beers.find((beer) => beer.id == beerValue)
         setBeerSelected(chosenBeerByNumber)
         console.log(`selected beer is ${beerSelected}`)
     }

@@ -19,8 +19,6 @@ Bad at picking your next pint, and always holding up the queue at the bar? Use P
 
 ### Run the app 
 `npm start`
-This should automatically open http://localhost:3000 in the browser
-
 
 ## Changes I'd Like to Make
 1. Currently the user can add to the lists before a beer has been selected, this adds an empty item to the list. I'd like to stop them from being able to do this.

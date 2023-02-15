@@ -1,12 +1,8 @@
 # Punk Pints
-<!-- 
-![The Punk Pints dashboard](src/images/image1.png)
-![Serving a random beer to the user](src/images/image2.png)
-![Adding had and wated beers](src/images/image3.png) -->
 
-<img src="src/images/image1.png" width="300" height="auto">
-<img src="src/images/image2.png" width="300" height="auto">
-<img src="src/images/image3.png" width="300" height="auto">
+![The Punk Pints dashboard](src/images/resized.png)
+![Serving a random beer to the user](src/images/image2.png)
+![Adding had and wated beers](src/images/image3.png)
 
 ## The Brief
 

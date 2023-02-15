@@ -18,7 +18,7 @@ Bad at picking your next pint, and always holding up the queue at the bar? Use P
 
 ## Getting Started
 
-### Install depenencies 
+### Install dependencies 
 `npm i` 
 
 ### Run the app 

@@ -8,7 +8,7 @@
 
 ## The Brief
 
-A mini project inspired by the weekend homework from week 7 of the CodeClan professional software development course. I created a fun, interactive app using the Punk API - a searchable, filterable record of Brew Dog's expansive back cataglogue (https://punkapi.com/).
+A mini project inspired by the weekend homework from week 7 of the CodeClan professional software development course. I created a fun, interactive app using the Punk API - a searchable, filterable record of Brew Dog's expansive back cataglogue.
 
 Bad at picking your next pint, and always holding up the queue at the bar? Use Punk Pints to choose your next drink!
 
@@ -20,15 +20,20 @@ Bad at picking your next pint, and always holding up the queue at the bar? Use P
 
 ## Getting Started
 
-# Install depenencies 
+### Install depenencies 
 `npm i` 
 
-# Run the app 
+### Run the app 
 `npm start`
-This should automatically open http://localhost:3000 in the browser
 
+## Tech Used
+- JavaScript
+- Express.JS
+- React
+- Punk API (https://punkapi.com/)
 
-## Changes I'd ike to Make
-1. Currently the user can add to the lists before a beer has been selected, this adds an empty item to the list. I'd like to fix this.
-2. Once a beer has been added to the list I would like this beer to not be served to the user again.
+## Changes I'd Like to Make
+- Currently the user can add to the lists before a beer has been selected, this adds an empty item to the list. I'd like to stop them from being able to do this.
+- Once a beer has been added to the list I would like this beer to not be served to the user again.
+- For the app to function well on mobile, seeing as the user will likely be accessing this using their mobile from the pub!
 

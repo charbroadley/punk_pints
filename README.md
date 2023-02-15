@@ -1,5 +1,11 @@
 # Punk Pints
 
+![The Punk Pints dashboard](src/images/image1.png)
+![Serving a random beer to the user](src/images/image2.png)
+![Adding had and wated beers](src/images/image3.png)
+
+<img src="src/images/image1.png" width="200" height="100">
+
 ## The Brief
 
 A mini project inspired by the weekend homework from week 7 of the CodeClan professional software development course. I created a fun, interactive app using the Punk API - a searchable, filterable record of Brew Dog's expansive back cataglogue (https://punkapi.com/).

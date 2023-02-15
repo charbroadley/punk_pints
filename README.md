@@ -8,6 +8,8 @@ A mini project inspired by the weekend homework from week 7 of the CodeClan prof
 
 Bad at picking your next pint, and always holding up the queue at the bar? Use Punk Pints to choose your next drink!
 
+** Timescale - 2 days **
+
 ## How to Use
 1. Type a number between 1 and 80
 2. Punk Pints will return a beer selected from Punk API

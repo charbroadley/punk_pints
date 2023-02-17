@@ -1,6 +1,6 @@
 # Punk Pints
 
-![Punk Pints app showing a selected beer, the had list & the want list](src/images/punk-pints.png)
+<img width="400" alt="Punk Pints app showing a selected beer, the had list & the want list" src="src/images/punk-pints.png"></img>
 
 ## The Brief
 

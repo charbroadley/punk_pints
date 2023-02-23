@@ -1,4 +1,11 @@
 import WantedBeer from "./WantedBeer"
+import styled from "styled-components"
+
+const WantedBeerList = styled.section`
+    grid-area: want-list;
+    margin: 10px;
+    text-align: center;
+`
 
 const WantList = ({wantList}) => {
 
@@ -8,13 +15,12 @@ const WantList = ({wantList}) => {
     ))
 
     return (
-        <section className="want-list">
-            <h3>FUTURE PINTS!<br></br>
-            {showWantedBeers.length ? "Great choice!": "Click to add your future favourites!"}</h3>
+        <WantedBeerList>
+            <h3>{showWantedBeers.length ? "YOUR FUTURE PINTS!": " "}</h3>
 
             {showWantedBeers}
             
-        </section>
+        </WantedBeerList>
     )
 }
 

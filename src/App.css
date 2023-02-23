@@ -9,50 +9,47 @@
   width: 40%;
 }
 
-.beer-container {
-  /* display: flex;
-  border: 2px solid rgb(184, 47, 47); */
+/* .beer-container {
   grid-template-areas:
         'beer-selector interactive'
         'details details';
-}
+} */
 
-.beer-selector {
-  /* border: 2px solid #5ca0e9; */
+/* .beer-selector {
   grid-area: beer-selector;
   text-align: center;
   margin: 10px;
-}
+} */
 
 
-.interactive {
+/* .interactive {
   border: 1px dotted #5ca0e9;
   grid-area: interactive;
-}
+} */
 
-.details {
+/* .details {
   grid-area: details;
   display: grid;
   grid-template-areas:
     'text-side image-side';
   grid-template-columns: 50% 50%;
-}
+} */
 
-.text-side {
+/* .text-side {
   grid-area: text-side;
   margin: 10px;
-}
+} */
 
-.description {
+/* .description {
   text-align: justify;
-}
+} */
 
-.image-side {
+/* .image-side {
 grid-area: image-side;
 display: flex;
 justify-content: center;
 margin: 10px;
-}
+} */
 
 li {
   list-style-type: none;
@@ -86,11 +83,11 @@ li::before {
   background-color: #5ca0e9;
 }
 
-.buttons-container {
+/* .buttons-container {
   display: flex;
   justify-content: center;
   border: 5px solid white;
-}
+} */
 
 .lists {
   display: grid;
@@ -98,23 +95,23 @@ li::before {
   grid-template-columns: 50% 50%;
 }
 
-.want-list {
+/* .want-list {
   grid-area: want-list;
   margin: 10px;
   text-align: center;
-}
+} */
 
-.drunk-list {
+/* .drunk-list {
   grid-area: drunk-list;
   margin: 10px;
   text-align: center;
-}
+} */
 
-.your-beer {
+/* .your-beer {
   font-family: 'Sedgwick Ave Display', sans-serif;
   color: #5ca0e9;
   font-weight: bold;
   font-size:xx-large;
-}
+} */
 
 

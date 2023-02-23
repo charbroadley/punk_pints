@@ -2,6 +2,13 @@ import { useState, useEffect } from "react";
 import BeerSelector from "../components/BeerSelector";
 import BeerDetails from "../components/BeerDetails";
 import InteractiveContainer from "./InteractiveContainer";
+import styled from "styled-components";
+
+const BeersBox = styled.div`
+    grid-template-areas:
+        'beer-selector interactive'
+        'details details';
+`
 
 const BeerContainer = () => {
     
@@ -66,7 +73,7 @@ const BeerContainer = () => {
     }
 
     return(
-        <div className="beer-container">
+        <BeersBox>
             
             <BeerSelector
                 beerItems={beerItems} onBeerSelect={onBeerSelect}
@@ -81,7 +88,7 @@ const BeerContainer = () => {
 
             {beerSelected && <BeerDetails beer={beerSelected}/>}
 
-        </div>
+        </BeersBox>
     )
 }
 

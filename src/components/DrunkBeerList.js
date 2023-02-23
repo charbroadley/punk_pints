@@ -1,4 +1,11 @@
 import DrunkBeer from "./DrunkBeer"
+import styled from "styled-components"
+
+const DrunkBeersList = styled.section`
+    grid-area: drunk-list;
+    margin: 10px;
+    text-align: center;
+`
 
 const DrunkBeerList = ({drunkBeers}) => {
 
@@ -8,12 +15,11 @@ const DrunkBeerList = ({drunkBeers}) => {
     ))
 
     return (
-        <section className="drunk-list">
-            <h3>ALREADY HAD & LOVED<br>
-            </br>{showBeersAlreadyDrunk.length ? "These are all best!": "Add your favourites so you don't forget!"}</h3>
+        <DrunkBeersList>
+            <h3>{showBeersAlreadyDrunk.length ? "ALREADY HAD & LOVED!": " "}</h3>
 
             {showBeersAlreadyDrunk}
-        </section>
+        </DrunkBeersList>
     )
 }
 

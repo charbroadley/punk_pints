@@ -1,5 +1,12 @@
 import { useState } from "react"
 import Beer from "./Beer"
+import styled from "styled-components"
+
+const BeerChooser = styled.div`
+    grid-area: beer-selector;
+    text-align: center;
+    margin: 10px;
+`
 
 const BeerSelector = ({beerItems, onBeerSelect}) => {
 
@@ -30,7 +37,7 @@ const BeerSelector = ({beerItems, onBeerSelect}) => {
     }
 
     return (
-        <div className="beer-selector">
+        <BeerChooser>
             <h2>Terrible at choosing your next pint?
                 <br></br>
             Pick a number. We pick your next beer.</h2>
@@ -44,7 +51,7 @@ const BeerSelector = ({beerItems, onBeerSelect}) => {
                 <input type="text" id="beer" name="beer" value={inputData} onChange={handleTextChange}></input>
                 <input type="submit" value="Find a beer"></input>
             </form>
-        </div>
+        </BeerChooser>
     )
 }
 

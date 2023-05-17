@@ -8,6 +8,8 @@ A mini project inspired by the weekend homework from week 7 of the CodeClan prof
 
 Bad at picking your next pint, and always holding up the queue at the bar? Use Punk Pints to choose your next drink!
 
+Cheers!! :beers:
+
 **Timescale - 2 days**
 
 ## How to Use
